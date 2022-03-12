@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body onload="form.reset()">
+    <header class="logo">
+      <img src="./images/logo.svg" alt="" />
+    </header>
+
+    <form class="tip-calculator">
+      <!-- Main inputs-section  -->
+      <section class="inputs-section">
+        <div class="input-group">
+          <label for="bill-input">Bill</label>
+          <input
+            type="number"
+            id="bill-input"
+            placeholder="0"
+            onblur="placeholder='0'"
+            onfocus="placeholder=''"
+            class="bill-input"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="tip-input">Select Tip %</label>
+          <div class="tip-options">
+            <!-- <button class="tip-percent">5%</button> -->
+            <label for="5%">
+              <input id="5%" type="radio" value="0.05" name="tip-percent" />
+              <span>5%</span></label
+            >
+
+            <label for="10%">
+              <input id="10%" type="radio" value="0.1" name="tip-percent" />
+              <span>10%</span></label
+            >
+
+            <label for="15%">
+              <input id="15%" type="radio" value="0.15" name="tip-percent" />
+              <span>15%</span></label
+            >
+
+            <label for="25%">
+              <input id="25%" type="radio" value="0.25" name="tip-percent" />
+              <span>25%</span></label
+            >
+
+            <label for="50%">
+              <input id="50%" type="radio" value="0.5" name="tip-percent" />
+              <span>50%</span></label
+            >
+            <!-- <button class="tip-percent">10%</button>
+            <button class="tip-percent">15%</button>
+            <button class="tip-percent">25%</button>
+            <button class="tip-percent">50%</button> -->
+            <input
+              type="number"
+              class="tip-percent custom-tip"
+              placeholder="Custom"
+              onfocus="placeholder=''"
+              onblur="placeholder='Custom'"
+            />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="people-input">Number of People</label>
+          <input
+            type="number"
+            class="people-input"
+            id="people-input"
+            placeholder="0"
+            onfocus="placeholder=''"
+            onblur="placeholder='0'"
+            autocomplete="off"
+          />
+        </div>
+      </section>
+
+      <!-- Main - outputs section  -->
+      <section class="outputs-section">
+        <div class="tip-output">
+          <div class="output_label">
+            <span class="output_label--title">Tip Amount</span>
+            <span class="output_label--desc">/ person</span>
+          </div>
+          <span class="output-value tip-output-value">€0.00</span>
+        </div>
+        <div class="total-output">
+          <div class="output_label">
+            <span class="output_label--title">Total</span>
+            <span class="output_label--desc">/ person</span>
+          </div>
+          <span class="output-value total-output-value">€0.00</span>
+        </div>
+        <button class="reset-btn">Reset</button>
+      </section>
+    </form>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
