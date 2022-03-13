@@ -41,7 +41,7 @@ header {
   }
 }
 
-form {
+.tip-calculator {
   background: white;
   display: flex;
   flex-flow: column nowrap;
@@ -86,7 +86,7 @@ input:focus {
 }
 
 /* Bill input  */
-.bill-input {
+.bill {
   font-size: 2.4rem;
   background: url(./images/icon-dollar.svg) var(--Light-grayish-cyan-2)
     no-repeat left 2rem center;
@@ -101,13 +101,13 @@ input:focus {
   gap: 1rem;
 }
 
-.custom-tip {
+.custom {
   color: var(--Dark-grayish-cyan);
   background: var(--Light-grayish-cyan-2);
   font-size: 2.4rem;
 }
 
-.custom-tip::placeholder {
+.custom::placeholder {
   color: var(--Very-dark-cyan);
   font-size: 2.4rem;
 }
@@ -142,7 +142,7 @@ input[type="radio"]:checked + span {
   z-index: 90;
 }
 /* People input  */
-.people-input {
+.people {
   font-size: 2.4rem;
   background: url(./images/icon-person.svg) var(--Light-grayish-cyan-2)
     no-repeat left 2rem center;
@@ -210,13 +210,14 @@ footer {
     align-items: center;
     justify-content: space-evenly;
   }
-  form {
+
+  .tip-calculator {
     max-width: 1000px;
     flex-direction: row;
     border-radius: 3rem;
   }
 
-  form > * {
+  .tip-calculator > * {
     flex-basis: 50%;
   }
 
