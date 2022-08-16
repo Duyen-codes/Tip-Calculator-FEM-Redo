@@ -1,6 +1,7 @@
 # Tip calculator
 ![preview](preview.png)
 
+
 ## Built with
 - HTML
 - CSS
